@@ -17,7 +17,12 @@ public class BikeServiceImpl implements BikeService
 		// TODO Auto-generated method stub
 		return bikeRepository.save(bikeEntity);
 	}
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		bikeRepository.deleteAll();
 		
+	}	
 
 	
 
