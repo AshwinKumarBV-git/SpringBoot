@@ -16,6 +16,11 @@ public class BikeController {
 	public BikeEntity addBike(@RequestBody BikeEntity bikeEntity) {
 		return bikeService.save(bikeEntity);
 	}
+	@DeleteMapping("/delete")
+	public void deleteBike() {
+		bikeService.delete();
+	}
+	
 	
 	
 }
